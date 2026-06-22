@@ -1,22 +1,28 @@
-Cats vs Dogs Classification
+Cats vs Dogs Image Classification Using Support Vector Machine (SVM)
 
-Project Overview
+📌 Problem Statement
 
-This project is a Machine Learning-based image classification system that identifies whether an image belongs to a Cat or a Dog using the Support Vector Machine (SVM) algorithm.
+The objective of this project is to build a Support Vector Machine (SVM) model that can classify images as either Cats or Dogs. The model is trained using image data and learns to distinguish between the two categories based on image features.
 
-Dataset
+📂 Dataset
 
-- Dataset: Kaggle Cats vs Dogs Dataset
+The project uses the Kaggle Cats and Dogs Dataset, which contains labeled images of cats and dogs for training and testing the classification model.
+
 - Categories: Cat and Dog
 - Total Images Used: 2000
 
-Requirements
+🔄 Methodology
 
-Install the following libraries before running the project:
+- Data Collection and Loading
+- Image Preprocessing
+- Image Resizing (32 × 32)
+- Feature Extraction (Flattening)
+- Train-Test Split
+- SVM Model Training
+- Model Evaluation
+- Prediction and Classification
 
-pip install numpy opencv-python scikit-learn matplotlib
-
-Technologies Used
+🛠️ Technologies Used
 
 - Python
 - OpenCV
@@ -24,9 +30,28 @@ Technologies Used
 - Scikit-learn
 - Matplotlib
 
-Project Structure
+📋 Requirements
 
-Cats-vs-Dogs-Classification
+Install the required libraries:
+
+pip install numpy opencv-python scikit-learn matplotlib
+
+🤖 Machine Learning Model
+
+Support Vector Machine (SVM)
+
+The SVM algorithm is used to classify images into two categories: Cat and Dog. It creates an optimal decision boundary that helps distinguish between image features of both classes.
+
+📊 Results
+
+The trained model was evaluated on test data and achieved:
+
+- Dataset Loaded: 2000 Images
+- Accuracy Achieved: 56.0%
+
+📁 Project Structure
+
+Cats-vs-Dogs-Classification/
 │
 ├── main.py
 ├── show_cat.py
@@ -34,26 +59,6 @@ Cats-vs-Dogs-Classification
 ├── README.md
 └── output_screenshot.png
 
-Project Workflow
+🎯 Output
 
-1. Load Cat and Dog images from the dataset.
-2. Resize images to a fixed size.
-3. Convert images into feature vectors.
-4. Split the dataset into training and testing sets.
-5. Train the SVM classifier.
-6. Predict image categories.
-7. Evaluate model accuracy.
-
-Results
-
-- Dataset Loaded: 2000 Images
-- Model: Support Vector Machine (SVM)
-- Accuracy Achieved: 56.0%
-
-Conclusion
-
-The project successfully classifies Cat and Dog images using Machine Learning techniques and achieved an accuracy of 56.0%.
-
-Author
-
-Mythri
+The model predicts whether the given input image belongs to a Cat or Dog class and displays the prediction result.
