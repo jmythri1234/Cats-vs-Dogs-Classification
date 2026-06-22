@@ -1,0 +1,12 @@
+📋 Requirements
+
+Before running this project, ensure that the following Python libraries are installed:
+
+- NumPy – Numerical computing and array operations
+- OpenCV – Image processing and computer vision
+- Scikit-learn – Machine Learning model implementation
+- Matplotlib – Data visualization and image display
+
+Installation
+
+pip install numpy opencv-python scikit-learn matplotlib
